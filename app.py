@@ -5,7 +5,7 @@ import fitz  # PyMuPDF
 
 import google.generativeai as genai
 
-GOOGLE_API_KEY = "AIzaSyAbM8t-m-DOLAKb_meIOH32Ms9pZYEOfiU"
+GOOGLE_API_KEY = st.secrets["KEY"]
 genai.configure(api_key=GOOGLE_API_KEY)
 
 def get_gemini_response(pdf_content, prompt):
